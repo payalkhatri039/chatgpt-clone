@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: rgb(3, 0, 31);
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+}
+
+.sidebar {
+  flex: 3;
+  border-right: 1px solid rgb(100, 100, 100);
+  padding: 20px;
+}
+
+.mainChatSection {
+  flex: 9;
+}
+
+.titleContainer {
+  padding-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.chatgptLogo {
+  margin-right: 10px;
+}
+
+.chatgptTitle {
+  font-size: 20px;
+}
+
+.newChatButton {
+  background: #584af6;
+  border: none;
+  color: white;
+  padding: 1.5rem;
+  font-size: 1.5rem;
+  width: 25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  border-radius: 0.5rem;
+  margin-bottom: 3rem;
+  cursor: pointer;
+}
+
+.addButton {
+  height: 2rem;
+  padding-right: 1rem;
+}
+
+.chatQuery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+  margin-bottom: 3rem;
+  cursor: pointer;
+  padding: 1.5rem;
+  font-size: 1.5rem;
+  width: 25rem;
+  background: transparent;
+  margin: 0 auto;
+  border: 1px solid rgb(98, 98, 98);
+  color: rgba(222, 222, 222, 1);
+}
+
+.chatQuery > img {
+  margin-right: 2rem;
+  object-fit: cover;
+  height: 1.75rem;
+}
+
+.mainChatSection {
+  min-height: calc(100vh - 14rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 6rem 10rem;
+  margin-bottom: 0;
+}
+
+.chatMessageContainer {
+  margin-top: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.chatMessage {
+  padding: 0.5rem;
+  background: rgba(28, 30, 58, 1);
+  display: flex;
+  align-items: center;
+  border-radius: 0.6rem;
+  width: 90%;
+}
+
+.chatMessage > input {
+  width: calc(100% - 3rem);
+  outline: none;
+  padding: 1.25rem;
+  color: white;
+}
+
+.chatMessage > input,
+.send {
+  background: transparent;
+  border: none;
+}
+
+.chatMessageContainer>p{
+  margin: 2rem 0;
+}
+
+.chatgptResponseContainer{
+  overflow: hidden;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  width: 100%;
+  max-width: 70rem;
+  width: 100%;
+  height: calc(100vh - 17rem);
+}
+
+.chatgptResponse{
+  margin: 1rem;
+  padding: 2rem 3rem;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: flex-start;
+  text-align: justify;
+}
+
+.chatImage{
+  object-fit: cover;
+  width: 3.5rem;
+  margin-right: 2rem;
+  border-radius: 0.5rem;
+}
+
+.chatbot{
+  background: rgba(28, 30, 58, 1);
+  width: fit-content;
+  border-radius: 1rem;
+}
